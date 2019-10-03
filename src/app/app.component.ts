@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'service-catalog';
+  branding = 'service-catalog';
+
+  constructor() { }
+  
+  ngOnInit() {
+    document.title = this.branding;
+  }
 }

@@ -1,0 +1,27 @@
+{
+  "service": {
+    "instance": "dev66320.service-now.com",
+    "auth": "Basic YWRtaW46S3V0YWxpNzch",
+    "endpoint": "x_383282_angularap_index.do"
+  },
+  "application": {
+    "name": "angular-app",
+    "scope": "x_383282_angularapp",
+    "sys_id": "e726a542db03330024816a4948961949"
+  },
+  "files": {
+    "html": {
+      "index": "8c36a582db03330024816a49489619f9"
+    },
+    "js": {
+      "inline": "",
+      "polyfills": "c036e582db03330024816a494896195f",
+      "vendor": "",
+      "main": "c836e582db03330024816a494896196a",
+      "runtime": "4036e582db03330024816a4948961957"
+    },
+    "css": {
+      "styles": "8836e582db03330024816a494896193a"
+    }
+  }
+}

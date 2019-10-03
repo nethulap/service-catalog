@@ -1,0 +1,11 @@
+{
+  "/api": {
+    "target": "https://dev66320.service-now.com",
+    "logLevel": "info",
+    "secure": false,
+    "headers": {
+      "Host": "dev66320.service-now.com",
+      "authorization": "Basic YWRtaW46S3V0YWxpNzch"
+    }
+  }
+}

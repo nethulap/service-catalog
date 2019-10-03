@@ -1,0 +1,128 @@
+.ngx-dat-column-header {
+    font-weight: bolder; 
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+button:focus {
+    outline:none !important;
+}
+
+.dark-overlay{
+    background-color: rgba(0,0,0,0.7);
+    position: fixed; 
+    top:0;
+    left:0;
+    width: 100%;
+    min-height:805px; 
+}
+
+.loading {
+    margin: auto;
+}
+
+.result {
+    button {
+        cursor: default;
+    }
+    color: #f44336;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.elipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon-margin {
+    margin-top: -12px;
+}
+
+.datatable-header {
+    background: rgb(5, 89, 200) !important;
+}
+
+.datatable-row-center {
+    margin-top: -5px !important;
+}
+
+.sort-btn {
+    color: #fff;
+}
+
+//use this to display sort btn by default 
+/* .sort-btn:not([class*="datatable-icon-"]):before { 
+    font-family: data-table; content: "c"; 
+} */
+
+.datatable-header-cell-label {
+    color:#fff;
+    font-weight: bolder; 
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.datatable-header-cell {
+    color: #fff !important;
+}
+
+.cell-cursor {
+    cursor: pointer !important;
+}
+
+.ngx-datatable.material.single-selection .datatable-body-row.active, 
+.ngx-datatable.material.single-selection .datatable-body-row.active .datatable-row-group, 
+.ngx-datatable.material.multi-selection .datatable-body-row.active, 
+.ngx-datatable.material.multi-selection .datatable-body-row.active .datatable-row-group, 
+.ngx-datatable.material.multi-click-selection .datatable-body-row.active, 
+.ngx-datatable.material.multi-click-selection .datatable-body-row.active .datatable-row-group {
+    background: #36bbf0 !important;
+    color: #ffffff !important;
+}
+
+.select-class {
+    cursor: pointer;
+    .ngx-datatable.material .datatable-body .datatable-body-row.active .datatable-body-cell {
+        background: #36bbf0 !important;
+        color: #ffffff !important;
+    }
+}
+
+.ngx-datatable.material:not(.cell-selection) 
+.datatable-body-row:hover, 
+.ngx-datatable.material:not(.cell-selection) 
+.datatable-body-row:hover 
+.datatable-row-group {
+    background: #abd2fd !important;
+}
+
+.ngx-datatable.material.striped .datatable-row-odd {
+    //for demo purpose only
+    //background: #d2cece !important;
+    
+    background: #ece5e5;
+}
+
+.more-records{
+    padding-bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+.right-align {
+    text-align: right !important;
+}
+
+
+
+

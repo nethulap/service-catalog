@@ -1,0 +1,70 @@
+<ngx-datatable *ngIf="users?.length > 0" #usersListTable class="material fullscreen striped" [ngClass]="{'panel-height':users.length > 15}"
+    [rows]="users" [columnMode]="'force'" [headerHeight]="40" [footerHeight]="40" [rowHeight]="40" [limit]="15" [scrollbarV]="users.length > 15">
+    <ngx-datatable-column [name]="'First Name'" [prop]="'first_name'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Last Name'" [prop]="'last_name'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Created On'" [prop]="'sys_created_on'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value | date: 'dd/MM/yyyy'}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+</ngx-datatable>
+
+<hr/>
+
+<ngx-datatable *ngIf="incidents?.length > 0" #usersListTable class="material fullscreen striped" [ngClass]="{'panel-height':incidents.length > 15}"
+    [rows]="incidents" [columnMode]="'force'" [headerHeight]="40" [footerHeight]="40" [rowHeight]="40" [limit]="15" [scrollbarV]="incidents.length > 15">
+    <ngx-datatable-column [name]="'Incident No'" [prop]="'number'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Created On'" [prop]="'sys_updated_on'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value | date: 'dd/MM/yyyy'}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Domain'" [prop]="'sys_domain.value'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Created'" [prop]="'sys_created_by'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Impact'" [prop]="'impact'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Priority'" [prop]="'priority'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'State'" [prop]="'state'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    
+    <ngx-datatable-column [name]="'Active'" [prop]="'active'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column [name]="'Subcategory'" [prop]="'subcategory'" [width]="150">
+        <ng-template let-value="value" ngx-datatable-cell-template let-row="row">
+            <div>{{value}}</div>
+        </ng-template>
+    </ngx-datatable-column>
+</ngx-datatable>
